@@ -1,0 +1,19 @@
+<div class="container">
+
+  <h1>Shorten that thang!</h1>
+  <form action="/urls", method="POST">
+    <input type="text" name="user_input" autofocus placeholder="http://www.website.com">
+    <input type="submit" value="Shorten URL">
+  </form>
+
+</div>
+
+
+<section id="create-login">
+  <% if current_user %>
+    <h3>Your links!</h3>
+    <%= erb :_user_profile %>
+  <% else %>
+    <%= erb :_create_account %>
+  <% end %>
+</section>
