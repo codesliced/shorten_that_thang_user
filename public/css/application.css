@@ -9,6 +9,21 @@ h1 {
   color:#031634;
 }
 
+h1 a:link {
+  color: #036564;
+  text-decoration: none;  
+}
+
+h1 a:visited {
+  color: #036564;
+  text-decoration: none;  
+}
+
+h1 a:hover {
+  text-decoration: none;
+  color: #031634;  
+}
+
 .container {
   margin: 20px auto;
   width: 600px;

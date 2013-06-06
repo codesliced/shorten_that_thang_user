@@ -4,19 +4,15 @@ post '/login' do
   # if nobody is there, re-render same page, no login.
   # if user is returned, check user.password == params[:user][:password]
   #   login(user) if that's true
-  potential_user = User.find_by_email(params["user"]["email"])
-  if potential_user
-    if potential_user.password == params["user"]["password"]
-      login(potential_user)
-      @user_urls = potential_user.urls
-      @urls = Url.all
-      @username = potential_user.email
-      erb :list_of_urls
-    else
-      erb :index
-    end
+
+  # Push to the user model as an User.authenticate method
+  user = User.authenticate(params[:user])
+  if user
+    puts session.inspect
+    session[:current_user] = user.id
+    redirect to('/profile_page/' + user.id)
   else
-    erb :index
+    :index
   end
 end
 

@@ -1,7 +1,7 @@
 <div class="user_logged_in">
 <form id="logout_button" action="/logout" method="get">
   <% if current_user %>
-  <p><%= @username %> is<% end %> logged in.    |    <a href="/profile_page/<%= session[:current_user] %>">My URLs</a>    
+  <p><%= current_user.email %> is<% end %> logged in.    |    <a href="/profile_page/<%= session[:current_user] %>">My URLs</a>    
   <input type="submit" value="Logout" class="submit_btn">
 </form>
 </div>
