@@ -91,27 +91,33 @@ form {
 }
 
 .login {
-  width: 600px
+  width: 600px;
   margin-left: 200px;
-}
-
-.create_form{
-  width: 200px;
-}
-
-.login_form{
-
 }
 
 
 .submit_btn {
- color: #033649;
- font-size: 10px;
- width: 70px;
- height: 20px;
- border: none;
- margin-left: 10px;
- padding: 0;
- /*background-color: #CDB380; */
+  color: #033649;
+  font-size: 10px;
+  width: 70px;
+  height: 20px;
+  border: none;
+  margin-left: 10px;
+  padding: 0;
 }
 
+
+fieldset {
+  border: 0;
+}
+
+div.textbox{
+  width: 600px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.textbox input {
+  width: 30%;
+  margin-left: 2%;
+}

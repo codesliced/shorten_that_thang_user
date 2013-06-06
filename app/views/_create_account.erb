@@ -1,14 +1,18 @@
-<div id="create_form">
-<form class="create" action='/create_account' method="post">
+<div class="textbox">
+  <form action='/create_account' method="post">
+  <fieldset class="create_form">
   <input type="text" placeholder="Email:" name="user[email]">
   <input type="password" placeholder="Password:" name="user[password]">
   <input type="submit" value="create account">
-</form>
-</div>
-<div id="login_form">
-<form class="login" action='/login' method="post">
+  </fieldset>
+  </form>
+
+
+  <form action='/login' method="post">
+  <fieldset class="login_form">
   <input type="text" placeholder="Email:" name="user[email]">
   <input type="password" placeholder="Password:" name="user[password]">
   <input type="submit" value="login">
-</form>
+  </fieldset>
+  </form>
 </div>
