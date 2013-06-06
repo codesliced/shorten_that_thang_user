@@ -10,6 +10,7 @@ post '/login' do
       login(potential_user)
       @user_urls = potential_user.urls
       @urls = Url.all
+      @username = potential_user.email
       erb :list_of_urls
     else
       erb :index

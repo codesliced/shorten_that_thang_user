@@ -21,10 +21,20 @@ h1 {
   background-color: #F4EAD5;
 }
 
+.user_logged_in {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  font-size: 12px;
+}
+
+
+
 table {
   font-size: 12px;
   line-height: 18px;
   vertical-align: top;
+  padding: 10px;
 }
 
 table a:link {
@@ -37,6 +47,24 @@ table a:visited {
   text-decoration: none; 
   color: #CDB380; 
 }
+
+.user_logged_in a:link {
+  text-decoration: none; 
+  color: #033649; 
+  font-weight: 700;
+}
+
+.user_logged_in a:visited {
+  text-decoration: none; 
+  color: #033649;   
+}
+
+.user_logged_in a:hover{
+  background-color: #036564;
+  color: #CDB380;
+}
+
+
 .row_header {
   font-weight: 200;
   font-size:9px;
@@ -66,3 +94,24 @@ form {
   width: 600px
   margin-left: 200px;
 }
+
+.create_form{
+  width: 200px;
+}
+
+.login_form{
+
+}
+
+
+.submit_btn {
+ color: #033649;
+ font-size: 10px;
+ width: 70px;
+ height: 20px;
+ border: none;
+ margin-left: 10px;
+ padding: 0;
+ /*background-color: #CDB380; */
+}
+
